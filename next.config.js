@@ -1,5 +1,8 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   experimental: {
-    middlewarePrefetch: true,
+    middlewarePrefetch: "flexible", // or "strict" depending on your preference
   },
 };
+
+module.exports = nextConfig;
